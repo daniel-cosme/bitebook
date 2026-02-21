@@ -1,63 +1,37 @@
-# -----------------------------
-# Node/Bun
-# -----------------------------
+```
+# Dependencies
 node_modules/
-.bun/
-bun.lockb
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
 
-# -----------------------------
-# TypeScript
-# -----------------------------
-*.tsbuildinfo
+# Build outputs
 dist/
 build/
+target/
 
-# -----------------------------
-# React / Frontend
-# -----------------------------
-.vite/
+# TypeScript/JavaScript
+*.tsbuildinfo
+*.js.map
+*.jsx.map
+*.ts.map
+
+# Environment variables
+.env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
-*.log
+.env.*
+!.env.example
 
-# -----------------------------
-# Logs
-# -----------------------------
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# -----------------------------
-# OS / Editor / IDE
-# -----------------------------
-.DS_Store
-Thumbs.db
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# -----------------------------
-# Prisma
-# -----------------------------
-prisma/migrations/
-prisma/.env
+# OS files
+.DS_Store
+Thumbs.db
 
-# -----------------------------
-# Database / Local dev
-# -----------------------------
-*.sqlite
-*.db
-*.dump
+# Logs
+*.log
 
-# -----------------------------
-# Tauri (se você usar depois)
-# -----------------------------
-src-tauri/target/
-src-tauri/bundle/
+# Temporary files
+*.tmp
+```
